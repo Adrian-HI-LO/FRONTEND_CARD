@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mostrar Input</title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Selecciona una opción</h2>
+        <form class="Acciones">
+            <label for="options">Opciones</label>
+            <select class="opciones" id="options">
+                <option value="">Selecciona una opción</option>
+                <option value="option1">Agregar a un nuevo usuario</option>
+                <option value="option2">Visualizar a un usuario ya existente</option>
+                <option value="option3">Modificar a un usuario existente</option>
+                <option value="option4">Eliminar a un usuario</option>
+            </select>
+        </form>
+
+        <!-- Div para Agregar un nuevo usuario -->
+        <div class="AGRegar" id="inputAGR">
+          <form id="FRMagr">
+               <label class="extraInput">Ingrese el nombre completo del Nuevo Usuario</label>
+               <input type="text" class="AGRin" id="fullNamAGR" placeholder="Adrian Astor..." required>
+               <label class="extraInput">Ingrese el Apellido Paterno</label>
+               <input type="text" class="AGRin" id="apUnoAGR" placeholder="Monroy" required>
+               <label class="extraInput">Ingrese el Apellido Materno</label>
+               <input type="text" class="AGRin" id="apDosAGR" placeholder="Morgan" required>
+               <label class="extraInput">Por favor suba una imagen del nuevo usuario</label>
+               <p>La imagen no debe de pasar de un tamaño maximo de 300 X 300px</p>
+               <input type="file" id="imgAGR" accept="image/*" class="AGRinF" required>
+   
+               <div class="dimensionAGR" id="mostrarPreview">
+                    <img id="previewIMG" src="#" alt="Vista Previa">
+               </div>
+               <label class="extraInput">Coloque el Codigo de su credencial</label>
+               <input type="text" class="AGRin" required>
+               <div>
+                  <input type="submit" value="Aceptar">
+                  <input type="reset" value="Limpiar">
+               </div>
+          </form>
+
+        </div>
+    </div>
+
+    <script src="./JS/seleccion.js"></script>
+</body>
+</html>

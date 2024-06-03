@@ -1,0 +1,123 @@
+body {
+     background-image: url(../IMG/BKG_RascaCielos.webp);
+     /* background-size: cover;
+     background-position: center; */
+     /* background-color: #B2DFDB; */
+     font-family: 'Courier New', Courier, monospace;
+     padding: 0;
+     margin: 0;
+}
+
+.container{
+     /* border: 3px solid#004D40; */
+     border-radius: 25px;
+     position: absolute;
+     width: 450px;
+     /* height: 550px; */
+     height: auto;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     /* background-image: url(../IMG/BKG_RascaCielos.webp);
+     background-size: cover;
+     background-position: center; */
+     /* background-color: #ffbaba; */
+     background: linear-gradient(#B71C1C, #fff);
+     text-align: center;
+     padding-bottom: 20px;
+}
+
+.container h2 {
+     margin-left: 25px;
+     width: 90%;
+     background-color: #fff;
+     border-radius: 20px;
+     font-size: 30px;
+     border-right: 3px solid #751717;
+     border-bottom: 3px solid #751717;
+}
+
+.Acciones {
+     width: 90%;
+     margin-left: 25px;
+     text-align: center;
+     background-color: #fff;
+     padding:15px 0;
+     border-bottom: 2px solid #751717;
+     border-right: 2px solid #751717;
+     border-radius: 20px;
+     padding-top: 25px;
+     padding-bottom: 35px;
+}
+.Acciones label {
+     font-size: 23px;
+     text-align: center;
+     letter-spacing: 3px;
+}
+.opciones{
+     width: 90%;
+     margin-left: 2px;
+     margin-top: 25px;
+     border-bottom: 1px solid #751717;
+     border-right: 1px solid #751717;
+     border-radius: 10px;
+     background-color: #fff;
+     text-align: center;
+     padding: 7px;
+     font-size: 15px;
+}
+
+
+
+/* Opcion Uno */
+.AGRegar{
+     padding: 10px 5px;
+     margin-top: 15px;
+     border-radius: 15px;
+     border-bottom: 1px solid #751717;
+     border-right: 1px solid #751717;
+     width: 85%;
+     margin-left: 30px;
+     background-color: #fff;
+}
+
+.extraInput{
+     width: 90%;
+     font-size: 15px;
+     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     font-weight: 100;
+}
+.AGRin{
+     width: 90%;
+     margin-left: 15px;
+     border-bottom: 1px solid #751717;
+     border-right: 1px solid #751717;
+     border-radius: 10px;
+     margin: 5px;
+     text-align: center;
+     padding: 5px;
+}
+
+#inputAGR {
+     display: none;
+ }
+
+ #mostrarPreview {
+     display: none;
+     width: 270px;
+     height: 270px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     overflow: hidden;
+     border: 5px solid#751717;
+     border-radius: 35px;
+     text-align: center;
+     padding-top: 10px;
+}
+
+#previewIMG{
+     width: auto;
+     height: 100%;
+     object-fit: cover;
+ }
